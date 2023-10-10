@@ -177,7 +177,7 @@ public class Main {
                                         System.out.println("Endereço: " + cadaPj.endereco.logradouro + "-" + cadaPj.endereco.numero);
 
                                         System.out.println();
-                                        System.out.println("Aperte ENTER para continuar");
+                                        System.out.println("Aperte ENTER para continuar a a a a");
                                         leitor.nextLine();
 
                                     }
