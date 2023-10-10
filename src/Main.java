@@ -47,10 +47,10 @@ public class Main {
                                 novaPf.cpf = leitor.nextLine();
 
                                 System.out.println("Digite o rendimento: ");
-                                novaPf.rendimento = leitor.nextFloat();
+                                novaPf.rendimento = Float.parseFloat(leitor.nextLine());
 
                                 System.out.println("Digite a data de nascimento: (dd/mm/aaaa)");
-                                novaPf.dataNasc = LocalDate.parse(leitor.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+                                novaPf.dataNasc = LocalDate.parse(leitor.nextLine(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
                                 Period idade = Period.between(novaPf.dataNasc, LocalDate.now());
 
@@ -62,10 +62,10 @@ public class Main {
                                 }
 
                                 System.out.println("Digite o logradouro: ");
-                                novoEndPf.logradouro = leitor.next();
+                                novoEndPf.logradouro = leitor.nextLine();
 
                                 System.out.println("Digite o número: ");
-                                novoEndPf.numero = leitor.nextInt();
+                                novoEndPf.numero = Integer.parseInt(leitor.nextLine());
 
                                 System.out.println("Este endereço é comercial? S/N: ");
                                 String endCom = leitor.next();
@@ -142,13 +142,13 @@ public class Main {
                                 novaPj.cnpj = leitor.nextLine();
 
                                 System.out.println("Digite o rendimento: ");
-                                novaPj.rendimento = leitor.nextFloat();
+                                novaPj.rendimento = Float.parseFloat(leitor.nextLine());
 
                                 System.out.println("Digite o logradouro: ");
-                                novoEndPj.logradouro = leitor.next();
+                                novoEndPj.logradouro = leitor.nextLine();
 
                                 System.out.println("Digite o número: ");
-                                novoEndPj.numero = leitor.nextInt();
+                                novoEndPj.numero =  Integer.parseInt(leitor.nextLine());
 
                                 System.out.println("Este endereço é comercial? S/N: ");
                                 String endCom = leitor.next();
